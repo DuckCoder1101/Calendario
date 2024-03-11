@@ -1,0 +1,54 @@
+html, body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Roboto, 'Lucida Sans Unicode' sans-serif;
+}
+
+main {
+    min-height: 100vh;
+}
+
+.calendar {
+    position: relative;
+    width: 60%;
+    margin: auto;
+    text-align: center;
+    color: white;
+    background-color: #8d8d8d;
+    box-sizing: border-box;
+
+    h2 {
+        display: block;
+        width: 100%;
+    }
+
+    > ul {
+        display: block;
+        background-color: #4d4d4d;
+        font-size: 0;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+
+        > li {
+            display: inline-block;
+            width: calc((100% / 7) - 1rem);
+            aspect-ratio: 1 / 1;
+            padding: 0;
+            margin: .5rem;
+            font-size: 3rem;
+            box-sizing: border-box;
+            border: 1px solid #ffffff;
+            vertical-align: middle;
+            border-radius: 12px;
+
+            * {
+                display: flex;
+                justify-self: center;
+                align-self: center;
+            }
+        }
+    }
+}
